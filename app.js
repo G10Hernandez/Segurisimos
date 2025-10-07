@@ -53,20 +53,29 @@ function verDetalles(id) {
       `;
 
       document.body.appendChild(modal);
-    });
+    })
+    .catch(error => console.error("Error al mostrar detalles:", error));
 }
 
 // Abrir formulario con tipo de seguro seleccionado
 function abrirCotizacion(nombreSeguro) {
   const select = document.getElementById("tipoSeguro");
   if (select) select.value = nombreSeguro;
-  window.scrollTo({ top: document.getElementById("form-cotizacion").offsetTop, behavior: "smooth" });
+  const formSection = document.getElementById("form-cotizacion");
+  if (formSection) {
+    window.scrollTo({
+      top: formSection.offsetTop - 50,
+      behavior: "smooth"
+    });
+  }
 }
 
 // Manejo del formulario de cotización
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("form-cotizacion");
   const mensaje = document.getElementById("mensajeConfirmacion");
+
+  if (!form) return;
 
   form.addEventListener("submit", e => {
     e.preventDefault();
@@ -78,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mensaje: form.mensaje.value
     };
 
-    console.log("Datos enviados:", datos); // Solo demo, no guarda aún
+    console.log("Datos enviados:", datos); // Solo demo
 
     mensaje.classList.remove("oculto");
     form.reset();
