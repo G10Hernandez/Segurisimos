@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seguros México | Tu Protección de Confianza</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguros México</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<h1>Seguros México</h1>
-<p>Tu protección, nuestra prioridad</p>
-</header>
+  <header>
+    <h1>Compañía de Seguros México</h1>
+    <p>Protegemos lo que más valoras</p>
+  </header>
 
+  <!-- 🟢 CONTENEDOR DE PRODUCTOS (necesario para app.js) -->
+  <main>
+    <h2>Nuestros Seguros</h2>
+    <div id="lista-productos" class="productos"></div>
+  </main>
 
-<section id="carrusel" class="carrusel"></section>
+  <!-- 🟢 FORMULARIO DE COTIZACIÓN -->
+  <section class="cotizacion">
+    <h2>Solicita tu cotización</h2>
+    <form id="form-cotizacion">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="correo" placeholder="Tu correo" required>
+      <select id="tipoSeguro" name="tipoSeguro" required>
+        <option value="">Selecciona un tipo de seguro</option>
+        <option value="Auto">Auto</option>
+        <option value="Hogar">Hogar</option>
+        <option value="Vida">Vida</option>
+        <option value="Gastos Médicos Mayores">Gastos Médicos Mayores</option>
+        <option value="Viaje">Viaje</option>
+        <option value="Microseguros">Microseguros</option>
+      </select>
+      <textarea name="mensaje" rows="3" placeholder="Mensaje adicional"></textarea>
+      <button type="submit">Enviar cotización</button>
+      <p id="mensajeConfirmacion" class="oculto">✅ ¡Solicitud enviada con éxito!</p>
+    </form>
+  </section>
 
-<main>
-  <h2>Nuestros Seguros</h2>
-  <div id="lista-productos" class="productos"></div>
-</main>
+  <!-- 🟢 CARRUSEL -->
+  <div class="carrusel">
+    <img id="carrusel-img" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Carrusel">
+  </div>
 
+  <!-- 🟢 FOOTER -->
+  <footer>
+    <p>© 2025 Compañía de Seguros México</p>
+  </footer>
 
-<section id="cotizacion" class="cotizacion">
-<h2>Solicita tu Cotización</h2>
-<form id="form-cotizacion">
-<label for="nombre">Nombre completo:</label>
-<input type="text" id="nombre" name="nombre" required>
-
-
-<label for="correo">Correo electrónico:</label>
-<input type="email" id="correo" name="correo" required>
-
-
-<label for="seguro">Tipo de seguro:</label>
-<select id="seguro" name="seguro" required></select>
-
-
-<label for="mensaje">Mensaje adicional:</label>
-<textarea id="mensaje" name="mensaje" rows="4"></textarea>
-
-
-<button type="submit">Enviar Cotización</button>
-</form>
-<p id="mensaje-enviado" class="oculto">✅ Tu solicitud ha sido enviada correctamente.</p>
-</section>
-
-
-<footer>
-<p>© 2025 Seguros México S.A. | Todos los derechos reservados</p>
-</footer>
-
-
-<script src="app.js"></script>
+  <!-- 🟢 IMPORTANTE: Cargar el JS al final -->
+  <script src="app.js"></script>
 </body>
 </html>
