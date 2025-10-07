@@ -1,0 +1,40 @@
+{
+"productos": [
+{
+"nombre": "Seguro de Auto",
+"descripcion": "Protege tu vehículo y a terceros ante accidentes, robos o daños materiales.",
+"cobertura": ["Daños materiales", "Robo total", "Responsabilidad civil", "Asistencia vial"],
+"alcance": "Cobertura nacional con talleres certificados."
+},
+{
+"nombre": "Seguro de Vida",
+"descripcion": "Asegura el bienestar económico de tu familia en caso de fallecimiento.",
+"cobertura": ["Fallecimiento natural o accidental", "Invalidez total o permanente"],
+"alcance": "Aplica en todo México con opción a beneficiarios internacionales."
+},
+{
+"nombre": "Seguro de Hogar",
+"descripcion": "Protege tu casa contra incendios, robos o desastres naturales.",
+"cobertura": ["Incendios", "Inundaciones", "Robo de contenido", "Responsabilidad civil familiar"],
+"alcance": "Cobertura nacional."
+},
+{
+"nombre": "Gastos Médicos Mayores",
+"descripcion": "Cubre hospitalización, tratamientos, cirugías y consultas médicas.",
+"cobertura": ["Hospitalización", "Medicamentos", "Cirugías", "Maternidad"],
+"alcance": "Cobertura nacional e internacional."
+},
+{
+"nombre": "Seguro de Viaje",
+"descripcion": "Tranquilidad en tus viajes por enfermedad, accidente o pérdida de equipaje.",
+"cobertura": ["Accidentes", "Pérdida de equipaje", "Cancelación de vuelo", "Asistencia médica"],
+"alcance": "Cobertura internacional."
+},
+{
+"nombre": "Microseguros",
+"descripcion": "Protección accesible para personas y pequeños negocios.",
+"cobertura": ["Salud básica", "Daños por desastres", "Accidentes personales"],
+"alcance": "Cobertura en zonas rurales y urbanas."
+}
+]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seguros México | Tu Protección de Confianza</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Seguros México</h1>
+<p>Tu protección, nuestra prioridad</p>
+</header>
+
+
+<section id="carrusel" class="carrusel"></section>
+
+
+<main>
+<h2>Productos y Servicios</h2>
+<div id="productos-container" class="productos"></div>
+</main>
+
+
+<section id="cotizacion" class="cotizacion">
+<h2>Solicita tu Cotización</h2>
+<form id="form-cotizacion">
+<label for="nombre">Nombre completo:</label>
+<input type="text" id="nombre" name="nombre" required>
+
+
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" required>
+
+
+<label for="seguro">Tipo de seguro:</label>
+<select id="seguro" name="seguro" required></select>
+
+
+<label for="mensaje">Mensaje adicional:</label>
+<textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+
+<button type="submit">Enviar Cotización</button>
+</form>
+<p id="mensaje-enviado" class="oculto">✅ Tu solicitud ha sido enviada correctamente.</p>
+</section>
+
+
+<footer>
+<p>© 2025 Seguros México S.A. | Todos los derechos reservados</p>
+</footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
